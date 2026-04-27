@@ -6,11 +6,12 @@ I am a PhD student in computer science, specifically in the formal study of prog
 I am working at [Verimage laboratory](https://www-verimag.imag.fr), Grenoble. My supervisors are [Sylvain Boulmé](https://www-verimag.imag.fr/~boulme/) and [David Monniaux](https://www-verimag.imag.fr/~monniaux/).
 
 ## PhD work
-LLBC (_low-level borrow-calculus_) is a model of safe Rust. It was intially introduced for the purpose of the [Aeneas verification project](github.com/AeneasVerif/aeneas), to define a symbolic execution. In an [ICFP'24 article](https://dl.acm.org/doi/10.1145/3674640), Ho, Fromherz and Protzenko studied LLBC, and proved that LLBC's symbolic execution acts as a sound borrow-checker.
 
-**My PhD project consists in formalizing this work in the Rocq prover**. More details on the results and methods are provided in [this preprint](https://hal.science/hal-05527340). The code is available [here](https://github.com/AeneasVerif/mechanized-llbc).
+LLBC (_low-level borrow-calculus_) is a model of Rust that is centered around borrows. It was intially introduced for the purpose of the [Aeneas verification project](github.com/AeneasVerif/aeneas). In an [ICFP'24 article](https://dl.acm.org/doi/10.1145/3674640), Ho, Fromherz and Protzenko studied LLBC. The connected it with an execution model on a heap, specified a borrow-checker (with a symbolic semantics), and proved its soundness.
 
-We are working on adding a CompCert backend to this formalization, as a way to have a proof-of-concept certified compiler for Rust. This work could also serve to prove the soundness of the functional translation of Aeneas.
+**My PhD project consists in formalizing this work in the Rocq prover**. I proved key results about the soundness of LLBC on a minimal fragment, containing mutable borrows, conditionals and loops. This effort lead me to identify a missing argument in the original proof, and to propose a fix. The code is available [here](https://github.com/AeneasVerif/mechanized-llbc). In [this preprint](https://hal.science/hal-05527340) we detail the introduced techniques.
+
+With Vincent Rébiscoul, we are working on adding a CompCert backend to this formalization, as a way to have a proof-of-concept certified compiler with a borrow-checker for Rust. This formalization could also serve to prove the soundness of the functional translation of Aeneas.
 
 ## Articles
 ### International Conferences
