@@ -27,8 +27,3 @@ Ralph Bottesch, Max W. Haslbeck, Alban Reynaud and René Thiemann, NFM 2020.
 ### National Conferences
 **[Formal Verification of Borrow-Checking by Local Commutation Diagram](https://hal.science/hal-05428143)** \
 Alban Reynaud Michez, JFLA 2026.
-
-This article is completed by the following preprint. I recommand to refer it instead:
-
-**[Mechanizing the proof of a borrow calculus](https://hal.science/hal-05527340)** \
-Alban Reynaud Michez, 2026.
